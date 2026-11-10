@@ -22,7 +22,7 @@ export const SOURCE_URL = "https://data.dynamical.org/ecmwf/ifs-ens/forecast-15-
 export const AOI_BBOX: readonly [number, number, number, number] = [-124.8, 24.5, -66.9, 49.4];
 
 /** US state boundaries (Census cartographic 1:20M), written by scripts/make_states_parquet.py. */
-export const STATES_PARQUET_URL = "/us-states.parquet";
+export const STATES_PARQUET_URL = `${import.meta.env.BASE_URL}us-states.parquet`;
 
 /** Which ensemble member to show; 0 is the control run. */
 export const ENSEMBLE_MEMBER = 0;
