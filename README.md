@@ -3,7 +3,8 @@
 This is an example app developed for SatSummit talk 'Satellite Imagery in Browser'/.
 
 This app visualizes dynamical.org's [ECMWF IFS ENS 15-day 0.25°](https://dynamical.org/catalog/ecmwf-ifs-ens-forecast-15-day-0-25-degree/)
-forecast over a fixed area of interest. The architecture follows awii-app's frontend: DuckDB-Wasm loads the zarr data, and deck.gl draws it.
+forecast over a fixed area of interest. It shows only the ensemble's control run (member 0), not the
+full 51-member ensemble; `ENSEMBLE_MEMBER` in `src/config.ts` picks the member. The architecture follows awii-app's frontend: DuckDB-Wasm loads the zarr data, and deck.gl draws it.
 
 ```sh
 pnpm install
