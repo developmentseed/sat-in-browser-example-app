@@ -1,0 +1,4 @@
+# @loaders.gl requires apache-arrow 21, but duck-db wasm requries 17. 
+# Pinning it to 17 since we don't need the parts of loaders.gl that use apache-arrow for now
+overrides:
+  apache-arrow: 17.0.0
